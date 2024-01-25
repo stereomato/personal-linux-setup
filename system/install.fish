@@ -9,7 +9,7 @@ sudo echo -n zswap.enabled=N snd_hda_intel.power_save=3 iwlwifi.power_save=Y iwl
  echo "Merge the last 2 lines together."
 
 # pager
- sudo pacman -S less
+sudo pacman -S less
 
 # pacman.conf
 sudo mv /etc/pacman.conf /etc/pacman.conf.original

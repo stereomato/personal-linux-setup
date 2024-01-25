@@ -1,0 +1,2 @@
+# Do not add systemd folder
+user/symlink-to-dotConfig/systemd/

@@ -1,0 +1,11 @@
+# Encrypted NVME SSD [ or storage that doesnt need system queueing ]
+rd.luks.options=discard,no-read-workqueue,no-write-workqueue 
+
+# Performance [  ]
+preempt=full zswap.enabled=Y zswap.compressor=zstd zswap.zpool=zsmalloc zswap.max_pool_percent=25 zswap.accept_threshold_percent=80
+
+# Power saving & other hw capabilities
+snd_hda_intel.power_save=3 iwlwifi.power_save=Y iwlwifi.power_level=3 i915.enable_guc=2 i915.enable_psr=1 i915.enable_psr2_sel_fetch=1
+
+# Arch specific
+audit=0

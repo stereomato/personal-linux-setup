@@ -1,0 +1,17 @@
+Dont forget to set the pearsche-* files as root owned!
+Dont forget to hard link pearsche-systemd-resolved.conf
+Due to sometimes choosing to put home on a subvolume or separate partition, I will have to copy the files instead of symlinking. Dango.
+
+sudo cp pearsche-powertop.service /etc/systemd/system/pearsche-powertop.service
+
+sudo cp pearsche-profile.sh /etc/profile.d/pearsche-profile.sh
+
+sudo cp pearsche-sysctl.conf /etc/sysctl.d/pearsche-sysctl.conf
+
+sudo cp pearsche-systemd-resolved.conf /etc/systemd/resolved.conf
+
+sudo cp pearsche-tmpfiles.conf /etc/tmpfiles.d/pearsche-tmpfiles.conf
+
+sudo cp pearsche-zram-generator.conf /etc/systemd/zram-generator.conf
+
+need to make a fish script to handle this for me 

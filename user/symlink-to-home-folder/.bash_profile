@@ -1,4 +1,4 @@
-## Pearsche's profile tweaks
+## Stereomato's profile tweaks
 
 # Source bashrc if found
 [[ -f ~/.bashrc ]] && . ~/.bashrc

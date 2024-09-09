@@ -1,0 +1,11 @@
+[Unit]
+Description=Service to mark 5min old pages as idle
+After=multi-user.target
+
+[Service]
+Type=oneshot
+Restart=on-failure
+ExecStart=/bin/bash -c 'echo 300 > /sys/block/zram0/idle'
+
+[Install]
+WantedBy=multi-user.target

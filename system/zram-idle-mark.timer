@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer to mark 5min old pages as idle
+After=multi-user.target
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=5min
+
+[Install]
+WantedBy=timers.target

@@ -1,7 +1,7 @@
 {
     "output": {
         "bass_enhancer#0": {
-            "amount": 5.0,
+            "amount": 10.0,
             "blend": 10.0,
             "bypass": false,
             "floor": 25.0,
@@ -16,7 +16,7 @@
             "balance": 0.0,
             "bypass": false,
             "equal-mode": "IIR",
-            "frequency": 180.0,
+            "frequency": 235.0,
             "gain": 0.0,
             "input-gain": 0.0,
             "mode": "RLC (BT)",
@@ -83,9 +83,9 @@
                 "enable-band": true,
                 "external-sidechain": false,
                 "knee": -10.0,
-                "makeup": 3.75,
+                "makeup": 5.0,
                 "mute": false,
-                "ratio": 2.5,
+                "ratio": 5.0,
                 "release-threshold": -100.0,
                 "release-time": 200.0,
                 "sidechain-custom-highcut-filter": false,
@@ -269,7 +269,7 @@
                 "split-frequency": 16000.0,
                 "stereo-split-source": "Left/Right"
             },
-            "bypass": false,
+            "bypass": true,
             "compressor-mode": "Modern",
             "dry": -100.0,
             "envelope-boost": "None",

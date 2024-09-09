@@ -1,0 +1,12 @@
+[Unit]
+Description=Service to write to backing device incompressible, idle and huge pages.
+After=multi-user.target
+StartLimitBurst=0
+
+[Service]
+Type=oneshot
+Restart=on-failure
+ExecStart=/bin/bash -c 'echo incompressible > /sys/block/zram0/writeback && echo huge_idle > /sys/block/zram0/writeback'
+
+[Install]
+WantedBy=multi-user.target
